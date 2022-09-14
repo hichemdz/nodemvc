@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {{!-- <link rel="stylesheet" href="sweetalert2.min.css"> --}}
+    <link rel="stylesheet" href="css/app.css">
+    <title>Document</title>
+</head>
+<body >
+   
+    {{!-- <header>
+        <nav class="bg-black">
+            <div class="container mx-auto">
+                <div class="flex justify-between items-center py-4">
+                    <a href="/" class="text-xl font-bold text-white">Lkdaps</a>
+                    <ul class="font-medium flex items-center space-x-5 text-white ">
+                        <li>
+                            <a class="hover:text-red-500" href="">home</a>
+                        </li>
+                        <li>
+                            <a class="hover:text-red-500" href="">services</a>
+                        </li>
+                        <li>
+                            <a class="hover:text-red-500" href="">about</a>
+                        </li>
+                        <li>
+                            <a class="hover:text-red-500" href="">portofolio</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header> --}}
+    
+    <div class="flex w-full h-screen">
+        <aside class="w-64 bg-blue-900">
+            <div class="px-8 py-4">
+                <a href="/" class="text-xl font-bold text-white">Lkdaps</a>
+
+            </div>
+            <ul class="text-white  mt-3 text-sm">
+                <li class=""><a class="bg-blue-800 block px-8 py-4 " href="">Dashboard</a></li>
+                <li><a class="block px-8 py-4"  href="">Users</a></li>
+                <li><a class="block px-8 py-4" href="">Project</a></li>
+               
+            </ul>
+        </aside>
+    </div>
+   
+
+   <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+   {{#if success}}
+  
+  
+        <script>
+           Swal.fire({
+                title: 'Success!',
+                text: '{{{success}}}',
+                icon: 'success',
+                //confirmButtonText: 'Cool'
+                })
+        </script>
+    
+        
+   {{/if}}
+</body>
+</html>
